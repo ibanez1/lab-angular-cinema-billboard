@@ -1,0 +1,12 @@
+<p>
+  my-home-component works!
+</p>
+
+<div>
+  <p *ngFor = 'let m of movies'>
+    {{m.title}}
+    <img src="{{m.poster}}" width="200" alt="">
+    <a [routerLink]="['/movie',m.id]">Go to Movie</a>
+  </p>
+      
+</div>
